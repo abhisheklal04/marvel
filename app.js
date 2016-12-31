@@ -7,8 +7,8 @@ app.controller('MainCtrl', ['$rootScope', '$scope', '$http', 'modal', 'apiHandle
 
         $scope.gridOptions2 = {
             enablePaginationControls: false,
-            paginationPageSize: 5,
-            enableSorting: true,
+            paginationPageSize: PAGINATION_SIZE,
+            enableSorting: SORTING_BY_NAME,
             columnDefs: [{
                 name: 'Name',
                 field: 'name',
@@ -22,7 +22,7 @@ app.controller('MainCtrl', ['$rootScope', '$scope', '$http', 'modal', 'apiHandle
                 details: 'Action',
                 field: 'action',
                 enableSorting: false,
-                cellTemplate: '<div class="ui-grid-cell-contents" title="TOOLTIP"><div class="textCell"><button class="btn btn-success" id="{{COL_FIELD}}" ng-click="grid.appScope.showModal($event)">Details</button></div> </div>'
+                cellTemplate: '<div class="ui-grid-cell-contents" title="TOOLTIP"><div class="textCell"><button class="btn btn-warning" id="{{COL_FIELD}}" ng-click="grid.appScope.showModal($event)">Details</button></div> </div>'
             }]
         };
 
