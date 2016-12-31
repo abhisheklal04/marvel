@@ -6,9 +6,9 @@ App Technology : Angular.js Angular ui-grid , Bootstrap CSS framework.
 
 Features:
   1. Search characters by name starting with a keyword.
-  2. Characters are displayed page by page 5 characters.
-  3. Sorting by name upon clicking name header.
-  3. Requests from mavel server are cached to prevent the identical datafetch from server.
+  2. Characters are displayed page by page, 5 characters per page along with thumbnails.
+  3. Sorting by name(ASC & DESC) upon clicking name header.
+  3. Response from marvel server are cached to prevent the identical datafetch from server.
   4. Application can cache 10 recent character lists and character details requests from marvel server though can be changed in appProperties.js
 
 
