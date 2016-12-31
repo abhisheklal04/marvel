@@ -114,7 +114,7 @@ app.factory('apiHandler', ['$rootScope', '$http', '$q', '$cacheFactory', functio
                 if (angular.isUndefined(cachedData)) {
 
                     var param = filter == '' ? '' : 'nameStartsWith=' + filter + '&';
-                    var url = 'http://gateway.marvel.com:80/v1/public/characters?' + param + 'apikey=' + MARVEL_API_PUBLIC_KEY + '&ts=1&limit=100';
+                    var url = 'http://gateway.marvel.com:80/v1/public/characters?' + param + 'apikey=' + MARVEL_API_PUBLIC_KEY + '&ts=1&limit='+CHARACTER_FETCH_LIMIT;
 
                     $http.get(url)
                         .success(function(data) {
