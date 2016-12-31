@@ -1,0 +1,73 @@
+body {
+    background: #f1f1f1;
+}
+
+.grid {
+    width: 90%;
+    margin: 2% auto;
+}
+
+.ui-grid-header-cell {
+    background: #3F51B5;
+    color: #fff;
+}
+
+.ui-grid-canvas img {
+    width: 100px;
+}
+
+.grid1483090874388 .ui-grid-row,
+.grid1483090874388 .ui-grid-cell,
+.grid1483090874388 .ui-grid-cell .ui-grid-vertical-bar {
+    height: auto;
+}
+
+.ui-grid-icon-angle-down {
+    display: none;
+}
+
+.ui-grid-header-cell {
+    width: 33% !important;
+    height: auto!important;
+}
+
+.ui-grid-cell {
+    width: 33% !important;
+    height: 100px!important;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.searchbar,
+.pagination {
+    width: 90%;
+    margin: 1% 5%;
+}
+
+.searchbar p {
+    font-size: 24px;
+    color: #3F51B5;
+    text-align: center;
+}
+
+.ui-grid-viewport {
+    overflow-x: hidden!important;
+}
+
+..ui-grid-cell-contents {
+    display: table;
+}
+
+.textCell {
+    vertical-align: middle;
+    /* padding: 43px 0; */
+    height: 100px;
+    display: table-cell;
+    text-align: center;
+    width: 300px;
+    white-space: nowrap;
+}

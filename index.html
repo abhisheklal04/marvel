@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="app">
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <div ng-controller="MainCtrl as mainCtrl">        
+        <div class="searchbar">
+            <p><strong>Marvel Characters</strong></p>
+            <input type="text" id="searchbox" class="form-control" placeholder="Search Character Name" ng-model="mainCtrl.searchbox">
+            <button type="button" id="search" class="btn btn-success" ng-click="search()">Search</button>
+            <button type="button" id="reset" class="btn btn-success" ng-click="reset()">Reset</button>
+        </div>
+        <div ui-grid="gridOptions2" ui-grid-pagination class="grid"></div>
+        <div class="pagination">
+            <p>Current page: {{ gridApi2.pagination.getPage() }} of {{ gridApi2.pagination.getTotalPages() }}</p>
+            <button type="button" class="btn btn-success" ng-click="gridApi2.pagination.previousPage()">
+                previous page
+            </button>
+            <button type="button" class="btn btn-success" ng-click="gridApi2.pagination.nextPage()">
+                next page
+            </button>
+        </div>
+    </div>
+    <script src="appProperties.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
